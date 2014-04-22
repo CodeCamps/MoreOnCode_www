@@ -5,8 +5,13 @@
 		<style type="text/css">
 			#navTiles { 
 				border: 0;
-				padding-top: 60px;
+				padding-top: 15px;
 				text-align: center;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+			}
+			
+			#navTiles p { 
+				font-size: 0.75em;
 			}
 			
 			#navTiles ul { 
@@ -38,33 +43,84 @@
 			<ul>
 				<li class="gotoBlog">
 					<div class="logo"><img src="images/BlogAndNews.png" alt="Blog and News"/></div>
-					<h3>This is the Header</h3>
-					<p>This is the content</p>
+					<h3>My Personal Blog</h3>
+					<p>
+						Things that catch my attention will often<br/>
+						find their way into this blog. Programming,<br/>
+						art, writing, music, juggling, family, ...
+					</p>
 				</li>
 				<li class="gotoCamps">
 					<div class="logo"><img src="images/GameCamp.png" alt="Game Programming Camps"/></div>
-					<h3>This is the Header</h3>
-					<p>This is the content</p>
+					<h3>The Camp Blog</h3>
+					<p>
+						I teach a game programming camp every<br/>
+						year for <a href="http://landryacademy.com/">Landry Academy</a>. I occasionally<br/>
+						do the same for some local teens.
+					</p>
 				</li>
 				<li class="gotoGames">
 					<div class="logo"><img src="images/Games.png" alt="Games from the kids and me"/></div>
-					<h3>This is the Header</h3>
-					<p>This is the content</p>
+					<h3>Games from Kids and Me</h3>
+					<p>
+						As I work with the kids (or on my own) on<br/>
+						projects, they will be stored here. It's a<br/>
+						great place for us to collaborate.
+					</p>
 				</li>
 				<li class="gotoBooks">
 					<div class="logo"><img src="images/Books.png" alt="Books and Books-in-Progress"/></div>
-					<h3>This is the Header</h3>
-					<p>This is the content</p>
+					<h3>My Books &amp; WIPs</h3>
+					<p>
+						In addition to <a href="http://www.amazon.com/XNA-Game-Studio-Express-Developing/dp/1598633686/ref=as_li_tf_mfw?&linkCode=wey&tag=coll06-20">my 2007 book on XNA</a>, I<br/>
+						spend some of my free time writing new<br/>
+						books. Feel free to take a peek.
+					</p>
 				</li>
 				<li class="gotoArt">
 					<div class="logo"><img src="images/Art.png" alt="Art and Assets"/></div>
-					<h3>This is the Header</h3>
-					<p>This is the content</p>
+					<h3>My Doodles</h3>
+					<p>
+						I dabble in art. A lot. When you see my<br/>
+						artistic creations, you'll understand why<br/>
+						I make my living as a programmer.
+					</p>
 				</li>
 				<li class="gotoMonoGame">
 					<div class="logo"><img src="images/MonoGame.png" alt="MonoGame Contributions"/></div>
-					<h3>This is the Header</h3>
-					<p>This is the content</p>
+					<h3>The MonoGame Project</h3>
+					<p>
+						MonoGame is a cross-platform library<br/>
+						that's modelled on Microsoft's XNA<br/>
+						Framework. I occasionally contribute.
+					</p>
+				</li>
+				<li class="gotoFauxcabulary">
+					<div class="logo"><img src="images/Fauxcabulary.png" alt="My Humor"/></div>
+					<h3>My Humor ...</h3>
+					<p>
+						... or lack thereof. I've posted content to my<br/>
+						pun-a-day website from 2010 through 2014,<br/>
+						with content prepared for most of 2015.
+					</p>
+				</li>
+				<li class="gotoCodetopia">
+					<div class="logo"><img src="images/Codetopia.png" alt="My Company"/></div>
+					<h3>Codetopia, LLC</h3>
+					<p>
+						I established my own company in 2006. I do<br/>
+						programming, training, and various other<br/>
+						tasks for money. My boss is a wiener.
+					</p>
+				</li>
+				<li class="gotoSocialMedia">
+					<div class="logo"><img src="images/SocialMedia.png" alt="Social Media"/></div>
+					<h3>My Online Persona</h3>
+					<p>
+						I don't get out much. But I'm online as<br/>
+						<a href="https://twitter.com/groundh0g" title="Twitter">groundh0g</a>, <a href="https://www.facebook.com/groundh0g" title="Facebook">groundh0g</a>, <a href="https://www.youtube.com/user/groundh0g" title="YouTube">groundh0g</a>,<br/>
+						and, of course, <a href="https://www.linkedin.com/in/groundh0g" title="LinkedIn">groundh0g</a>.
+					</p>
 				</li>
 			</ul>
 		</section>
@@ -91,6 +147,12 @@
 					window.location.href = "http://groundh0g.deviantart.com/";
 				} else if($this.hasClass("gotoMonoGame")) {
 					window.location.href = "https://github.com/mono/MonoGame";
+				} else if($this.hasClass("gotoFauxcabulary")) {
+					window.location.href = "http://www.fauxcabulary.org/blog/";
+				} else if($this.hasClass("gotoCodetopia")) {
+					window.location.href = "http://www.codetopia.com/blog/";
+				} else if($this.hasClass("gotoSocialMedia")) {
+					window.location.href = "https://twitter.com/groundh0g";
 				}
 				$(this).removeClass("active");
 			});
