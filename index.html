@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>More on Code</title>
+		<style type="text/css">
+			#navTiles { 
+				border: 0;
+				padding-top: 60px;
+				text-align: center;
+			}
+			
+			#navTiles ul { 
+				border: 0;
+				padding: 0;
+			}
+			
+			#navTiles li {
+				border: 1px solid #ccc;
+				display: inline-block;
+				margin: 0 1% 25px;
+				padding: 20px;
+				position: relative;
+				overflow: hidden;
+				width: 30%;
+				vertical-align: top;
+				box-sizing: border-box;
+				cursor: pointer;
+			}
+			
+			#navTiles li.active {
+				border-color: #009;
+			}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<section id="navTiles">
+			<ul>
+				<li class="gotoBlog">
+					<div class="logo"><img src="images/BlogAndNews.png" alt="Blog and News"/></div>
+					<h3>This is the Header</h3>
+					<p>This is the content</p>
+				</li>
+				<li class="gotoCamps">
+					<div class="logo"><img src="images/GameCamp.png" alt="Game Programming Camps"/></div>
+					<h3>This is the Header</h3>
+					<p>This is the content</p>
+				</li>
+				<li class="gotoGames">
+					<div class="logo"><img src="images/Games.png" alt="Games from the kids and me"/></div>
+					<h3>This is the Header</h3>
+					<p>This is the content</p>
+				</li>
+				<li class="gotoBooks">
+					<div class="logo"><img src="images/Books.png" alt="Books and Books-in-Progress"/></div>
+					<h3>This is the Header</h3>
+					<p>This is the content</p>
+				</li>
+				<li class="gotoArt">
+					<div class="logo"><img src="images/Art.png" alt="Art and Assets"/></div>
+					<h3>This is the Header</h3>
+					<p>This is the content</p>
+				</li>
+				<li class="gotoMonoGame">
+					<div class="logo"><img src="images/MonoGame.png" alt="MonoGame Contributions"/></div>
+					<h3>This is the Header</h3>
+					<p>This is the content</p>
+				</li>
+			</ul>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#navTiles ul li").mouseenter(function(){
+				$(this).addClass("active");
+			});
+			$("#navTiles ul li").mouseleave(function(){
+				$(this).removeClass("active");
+			});
+			$("#navTiles ul li").click(function(){
+				var $this = $(this);
+				if($this.hasClass("gotoBlog")) {
+					window.location.href = "http://blog.moreoncode.com";
+				} else if($this.hasClass("gotoCamps")) {
+					window.location.href = "http://camps.moreoncode.com";
+				} else if($this.hasClass("gotoGames")) {
+					window.location.href = "https://github.com/CodeCamps";
+				} else if($this.hasClass("gotoBooks")) {
+					window.location.href = "https://leanpub.com/u/groundh0g";
+				} else if($this.hasClass("gotoArt")) {
+					window.location.href = "http://groundh0g.deviantart.com/";
+				} else if($this.hasClass("gotoMonoGame")) {
+					window.location.href = "https://github.com/mono/MonoGame";
+				}
+				$(this).removeClass("active");
+			});
+		});
+	</script>
+</html>
