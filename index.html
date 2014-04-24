@@ -10,8 +10,13 @@
 				font-family: Verdana, Arial, Helvetica, sans-serif;
 			}
 			
+			#navTiles h3 { 
+				white-space: nowrap;
+			}
+			
 			#navTiles p { 
 				font-size: 0.75em;
+				white-space: nowrap;
 			}
 			
 			#navTiles ul { 
@@ -30,16 +35,28 @@
 				vertical-align: top;
 				box-sizing: border-box;
 				cursor: pointer;
+				list-style-type: none;
+				list-style: none;
 			}
 			
 			#navTiles li.active {
 				border-color: #009;
 			}
+			
+			@media (max-width:1109px) {
+				body { font-size: 1.2em; }
+				#navTiles li { width: 45%; }
+			}
+			
+			@media (max-width:800px) {
+				body { font-size: 1.4em; }
+				#navTiles li { width: 95%; }
+			}
 		</style>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	</head>
 	<body>
-		<section id="navTiles">
+		<div id="navTiles">
 			<ul>
 				<li class="gotoBlog">
 					<div class="logo"><img src="images/BlogAndNews.png" alt="Blog and News"/></div>
@@ -123,7 +140,7 @@
 					</p>
 				</li>
 			</ul>
-		</section>
+		</div>
 	</body>
 	<script type="text/javascript">
 		$(document).ready(function(){
