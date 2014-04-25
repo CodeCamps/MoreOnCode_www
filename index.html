@@ -14,7 +14,9 @@
 				white-space: nowrap;
 			}
 			
-			#navTiles p { 
+			#navTiles p,
+			#navTiles td
+			{ 
 				font-size: 0.75em;
 				white-space: nowrap;
 			}
@@ -58,16 +60,7 @@
 	<body>
 		<div id="navTiles">
 			<ul>
-				<li class="gotoBlog">
-					<div class="logo"><img src="images/BlogAndNews.png" alt="Blog and News"/></div>
-					<h3>My Personal Blog</h3>
-					<p>
-						Things that catch my attention will often<br/>
-						find their way into this blog. Programming,<br/>
-						art, writing, music, juggling, family, ...
-					</p>
-				</li>
-				<li class="gotoCamps">
+				<li class="gotoCampBlog">
 					<div class="logo"><img src="images/GameCamp.png" alt="Game Programming Camps"/></div>
 					<h3>The Camp Blog</h3>
 					<p>
@@ -76,17 +69,17 @@
 						do the same for some local teens.
 					</p>
 				</li>
-				<li class="gotoGames">
-					<div class="logo"><img src="images/Games.png" alt="Games from the kids and me"/></div>
-					<h3>Games from Kids and Me</h3>
+				<li class="gotoMyBlog">
+					<div class="logo"><img src="images/BlogAndNews.png" alt="Blog and News"/></div>
+					<h3>My Personal Blog</h3>
 					<p>
-						As I work with the kids (or on my own) on<br/>
-						projects, they will be stored here. It's a<br/>
-						great place for us to collaborate.
+						Things that catch my attention will often<br/>
+						find their way into this blog. Programming,<br/>
+						art, writing, music, juggling, family, ...
 					</p>
 				</li>
-				<li class="gotoBooks">
-					<div class="logo"><img src="images/Books.png" alt="Books and Books-in-Progress"/></div>
+				<li class="gotoMyBooks">
+					<div class="logo"><img src="images/MyBooks.png" alt="Books and Books-in-Progress"/></div>
 					<h3>My Books &amp; WIPs</h3>
 					<p>
 						In addition to <a href="http://www.amazon.com/XNA-Game-Studio-Express-Developing/dp/1598633686/ref=as_li_tf_mfw?&linkCode=wey&tag=coll06-20">my 2007 book on XNA</a>, I<br/>
@@ -94,22 +87,31 @@
 						books. Feel free to take a peek.
 					</p>
 				</li>
-				<li class="gotoArt">
-					<div class="logo"><img src="images/Art.png" alt="Art and Assets"/></div>
+				<li class="gotoTheirGames">
+					<div class="logo"><img src="images/TheirGames.png" alt="Games from the students"/></div>
+					<h3>Camp &amp; Class Projects</h3>
+					<p>
+						As I work with the students on projects,<br/>
+						their work will be stored here. It's a<br/>
+						great place for us to collaborate.
+					</p>
+				</li>
+				<li class="gotoMyGames">
+					<div class="logo"><img src="images/MyGames.png" alt="Games from me"/></div>
+					<h3>My Projects</h3>
+					<p>
+						I start countless personal projects, but<br/>
+						rarely finish any of them. You're more<br/>
+						than welcome to take a little look-see.
+					</p>
+				</li>
+				<li class="gotoMyArt">
+					<div class="logo"><img src="images/MyArt.png" alt="Art and Assets"/></div>
 					<h3>My Doodles</h3>
 					<p>
 						I dabble in art. A lot. When you see my<br/>
 						artistic creations, you'll understand why<br/>
 						I make my living as a programmer.
-					</p>
-				</li>
-				<li class="gotoMonoGame">
-					<div class="logo"><img src="images/MonoGame.png" alt="MonoGame Contributions"/></div>
-					<h3>The MonoGame Project</h3>
-					<p>
-						MonoGame is a cross-platform library<br/>
-						that's modelled on Microsoft's XNA<br/>
-						Framework. I occasionally contribute.
 					</p>
 				</li>
 				<li class="gotoFauxcabulary">
@@ -139,6 +141,47 @@
 						and, of course, <a href="https://www.linkedin.com/in/groundh0g" title="LinkedIn">groundh0g</a>.
 					</p>
 				</li>
+				<li class="gotoMonoGame">
+					<div class="logo"><img src="images/MonoGame.png" alt="MonoGame Contributions"/></div>
+					<h3>The MonoGame Project</h3>
+					<p>
+						MonoGame is a cross-platform library<br/>
+						that's modelled on Microsoft's XNA<br/>
+						Framework. I occasionally contribute.
+					</p>
+				</li>
+				<li class="gotoCopyright">
+					<div class="logo"><img src="images/Copyright.png" alt="Copyright"/></div>
+					<h3>The Fine Print</h3>
+					<p>
+						Content is copyright &copy; <span id="copyrightYear">2014</span> Joseph B. Hall.<br/>
+						You may use the content from this site for<br/>
+						personal or commercial use. Links appreciated.
+					</p>
+				</li>
+				<li class="gotoShareThis">
+					<div class="logo"><img src="images/ShareThis.png" alt="Share This"/></div>
+					<h3>Tell Your Friends!</h3>
+					<table cellspacing="0" cellpadding="0" style="width:100%; margin-top:3px solid #fff;">
+						<tr>
+							<td>&nbsp;<br/>&nbsp;<br/>&nbsp;</td>
+							<td style="width:100%;">
+							
+								<table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+									<tr>
+									    <td><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.moreoncode.com/"  >Tweet</a><script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script></td>
+									    <td><div class="g-plusone" data-size="medium"   data-href="http://www.moreoncode.com/"></div><script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script></td>
+									</tr><tr>
+									    <td><iframe src="//www.facebook.com/plugins/like.php?href=http://www.moreoncode.com/&send=false&layout=button_count&width=120&show_faces=true&font&colorscheme=light&action=like&height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:20px;" allowTransparency="true"></iframe></td>
+									    <td><iframe src="http://ghbtns.com/github-btn.html?user=groundh0g&repo=MoreOnCode&type=watch&count=true" height="30" width="118" frameborder="0" scrolling="0" style="width:118px; height: 30px;" allowTransparency="true"></iframe></td>
+									</tr>
+								</table>
+							
+							</td>
+							<td>&nbsp;<br/>&nbsp;<br/>&nbsp;</td>
+						</tr>
+					</table>
+				</li>
 			</ul>
 		</div>
 	</body>
@@ -152,24 +195,30 @@
 			});
 			$("#navTiles ul li").click(function(){
 				var $this = $(this);
-				if($this.hasClass("gotoBlog")) {
+				if($this.hasClass("gotoMyBlog")) {
 					window.location.href = "http://blog.moreoncode.com";
-				} else if($this.hasClass("gotoCamps")) {
+				} else if($this.hasClass("gotoCampBlog")) {
 					window.location.href = "http://camps.moreoncode.com";
-				} else if($this.hasClass("gotoGames")) {
-					window.location.href = "https://github.com/CodeCamps";
-				} else if($this.hasClass("gotoBooks")) {
-					window.location.href = "https://leanpub.com/u/groundh0g";
-				} else if($this.hasClass("gotoArt")) {
+				} else if($this.hasClass("gotoMyGames")) {
+					window.location.href = "https://github.com/groundh0g";
+				} else if($this.hasClass("gotoMyArt")) {
 					window.location.href = "http://groundh0g.deviantart.com/";
-				} else if($this.hasClass("gotoMonoGame")) {
-					window.location.href = "https://github.com/mono/MonoGame";
+				} else if($this.hasClass("gotoTheirGames")) {
+					window.location.href = "https://github.com/CodeCamps";
+				} else if($this.hasClass("gotoMyBooks")) {
+					window.location.href = "https://leanpub.com/u/groundh0g";
 				} else if($this.hasClass("gotoFauxcabulary")) {
 					window.location.href = "http://www.fauxcabulary.org/blog/";
 				} else if($this.hasClass("gotoCodetopia")) {
 					window.location.href = "http://www.codetopia.com/blog/";
 				} else if($this.hasClass("gotoSocialMedia")) {
 					window.location.href = "https://twitter.com/groundh0g";
+				} else if($this.hasClass("gotoShareThis")) {
+					window.location.href = "https://github.com/mono/MonoGame";
+				} else if($this.hasClass("gotoCopyright")) {
+					window.location.href = "http://creativecommons.org/licenses/by/4.0/";
+				} else if($this.hasClass("gotoMonoGame")) {
+					window.location.href = "https://github.com/mono/MonoGame";
 				}
 				$(this).removeClass("active");
 			});
