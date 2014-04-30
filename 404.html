@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>More on Code</title>
+		<style type="text/css">
+			#navTiles { 
+				border: 0;
+				padding-top: 15px;
+				text-align: center;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+			}
+			
+			#navTiles h3 { 
+				white-space: nowrap;
+			}
+			
+			#navTiles p,
+			#navTiles td
+			{ 
+				font-size: 0.75em;
+				white-space: nowrap;
+			}
+			
+			#navTiles ul { 
+				border: 0;
+				padding: 0;
+			}
+			
+			#navTiles li {
+				border: 1px solid #ccc;
+				display: inline-block;
+				margin: 0 1% 25px;
+				padding: 20px;
+				position: relative;
+				overflow: hidden;
+				width: 30%;
+				vertical-align: top;
+				box-sizing: border-box;
+				cursor: pointer;
+				list-style-type: none;
+				list-style: none;
+			}
+			
+			#navTiles li.active {
+				border-color: #009;
+			}
+			
+			@media (max-width:1109px) {
+				body { font-size: 1.2em; }
+				#navTiles li { width: 45%; }
+			}
+			
+			@media (max-width:800px) {
+				body { font-size: 1.4em; }
+				#navTiles li { width: 95%; }
+			}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="navTiles">
+			<ul>
+				<li class="gotoHomePage">
+					<div class="logo"><img src="/images/404PageNotFound.png" alt="Page Not Found"/></div>
+					<h3>It's Not Here!</h3>
+					<p>
+						I don't know what you're looking for,<br/>
+						but it's not here. Click this box to<br/>
+						return to the home page: More on Code.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#navTiles ul li").mouseenter(function(){
+				$(this).addClass("active");
+			});
+			$("#navTiles ul li").mouseleave(function(){
+				$(this).removeClass("active");
+			});
+			$("#navTiles ul li").click(function(){
+				var $this = $(this);
+				if($this.hasClass("gotoHomePage")) {
+					window.location.href = "http://www.moreoncode.com";
+				}
+				$(this).removeClass("active");
+			});
+		});
+	</script>
+</html>
